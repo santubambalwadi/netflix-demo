@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StreamX</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="brand">StreamX</div>
+    <nav class="nav">
+      <button id="logoutBtn" class="btn btn-outline">Logout</button>
+    </nav>
+  </header>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-bg" id="hero-bg"></div>
+      <div class="hero-content">
+        <h1 id="hero-title"></h1>
+        <div class="hero-meta" id="hero-meta"></div>
+        <p id="hero-plot"></p>
+      </div>
+    </section>
+    <section class="rows">
+      <div class="row" data-category="Trending">
+        <h2 class="row-title">Trending</h2>
+        <div class="row-track" id="row-trending"></div>
+        <div class="row-loading" id="loading-trending"></div>
+      </div>
+      <div class="row" data-category="Action">
+        <h2 class="row-title">Action</h2>
+        <div class="row-track" id="row-action"></div>
+        <div class="row-loading" id="loading-action"></div>
+      </div>
+      <div class="row" data-category="Drama">
+        <h2 class="row-title">Drama</h2>
+        <div class="row-track" id="row-drama"></div>
+        <div class="row-loading" id="loading-drama"></div>
+      </div>
+      <div class="row" data-category="Sci-Fi">
+        <h2 class="row-title">Sci-Fi</h2>
+        <div class="row-track" id="row-scifi"></div>
+        <div class="row-loading" id="loading-scifi"></div>
+      </div>
+    </section>
+    <div id="modal-root"></div>
+  </main>
+  <script src="scripts/api.js"></script>
+  <script src="scripts/movieDetails.js"></script>
+  <script src="scripts/home.js"></script>
+  <script src="scripts/auth.js"></script>
+</body>
+</html>
