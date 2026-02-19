@@ -30,8 +30,10 @@ A production-quality, responsive Netflix-style frontend built with HTML, CSS, an
 
 ## Getting Started
 1. Clone or download the repository.
-2. Open `signup.html` or `login.html` in your browser to start.
-3. After login, you will be redirected to `index.html`.
+2. Create `.env` from `.env.example` and set `OMDB_API_KEY`.
+3. Install dependencies: `npm install`
+4. Start server: `npm start`
+5. Open `http://localhost:3000/signup.html` or `http://localhost:3000/login.html`
 
 ## Development
 - Files are static. Use any local server if needed:
@@ -66,4 +68,3 @@ scripts/
 
 ## Credits
 - Movie data from OMDb API (The Open Movie Database).
-

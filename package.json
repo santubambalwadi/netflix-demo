@@ -1,0 +1,15 @@
+{
+  "name": "streamx-netflix-demo",
+  "version": "1.0.0",
+  "description": "Netflix-style frontend with secure OMDb proxy",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7"
+  }
+}

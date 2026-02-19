@@ -1,8 +1,7 @@
 (() => {
-  const OMDB_API_BASE = 'https://www.omdbapi.com/';
-  const OMDB_API_KEY = '3abdd6cf';
+  const PROXY_BASE = '';
   async function searchMovies(query, page = 1) {
-    const url = `${OMDB_API_BASE}?apikey=${OMDB_API_KEY}&s=${encodeURIComponent(query)}&type=movie&page=${page}`;
+    const url = `${PROXY_BASE}/api/search?s=${encodeURIComponent(query)}&page=${page}`;
     try {
       const res = await fetch(url);
       const data = await res.json();
@@ -18,7 +17,7 @@
     }
   }
   async function getMovieById(imdbID) {
-    const url = `${OMDB_API_BASE}?apikey=${OMDB_API_KEY}&i=${encodeURIComponent(imdbID)}&plot=full`;
+    const url = `${PROXY_BASE}/api/movie?i=${encodeURIComponent(imdbID)}`;
     try {
       const res = await fetch(url);
       const data = await res.json();
