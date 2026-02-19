@@ -23,10 +23,6 @@ A production-quality, responsive Netflix-style frontend built with HTML, CSS, an
 - `login.html` — Login (Email, Password)
 - `index.html` — Home (after login)
 
-## OMDb API
-- Base: `https://www.omdbapi.com/`
-- API Key: `3abdd6cf`
-- Example: `https://www.omdbapi.com/?apikey=3abdd6cf&s=avengers`
 
 ## Getting Started
 1. Clone or download the repository.
